@@ -1,11 +1,14 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
 
 	return (
 		<div className="App">
-			<h1>Olá mundo</h1>
-			<p>Projeto com Api dos filmes</p>
+			<Navbar />
+			<h3>MyMovies</h3>
+			<Outlet />
 		</div>
 	);
 }
