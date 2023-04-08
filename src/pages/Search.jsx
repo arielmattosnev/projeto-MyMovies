@@ -19,7 +19,7 @@ const Search = () => {
   useEffect(() => {
     const apiKey = "85bd72542adc7443caf5bb23298c2611"; 
     const searchURL = "https://api.themoviedb.org/3/search/movie"; 
-    const url = `${searchURL}?api_key=${apiKey}&query=${query}`;
+    const url = `${searchURL}?api_key=${apiKey}&query=${query}`; 
     getSearchedMovies(url);
   }, [query]);
 
@@ -38,3 +38,4 @@ const Search = () => {
 };
 
 export default Search;
+
