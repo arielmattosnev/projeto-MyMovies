@@ -11,8 +11,8 @@ import MovieCard from "../components/MovieCard";
 
 import "./Movie.css";
 
-const moviesURL = import.meta.env.VITE_API;
-const moviesAPIKEY = import.meta.env.VITE_API_KEY;
+const moviesURL = "https://api.themoviedb.org/3/movie/";
+const moviesAPIKEY = "85bd72542adc7443caf5bb23298c2611";
 
 const Movie = () => {
   const { id } = useParams();
